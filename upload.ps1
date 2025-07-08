@@ -4,7 +4,7 @@ $repo = "youruser/yourrepo"
 $token = "your_github_token"  # Store securely!
 
 Write-Host "Generating manifest..."
-Start-Process -NoNewWindow -Wait -FilePath ".\ManifestGenerator.exe"
+Start-Process -NoNewWindow -Wait -FilePath ".\ManifestGenerate.exe"
 
 Write-Host "Uploading files to GitHub..."
 git add .
