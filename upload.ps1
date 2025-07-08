@@ -7,6 +7,6 @@ Start-Process -NoNewWindow -Wait -FilePath ".\ManifestGenerate.exe"
 Write-Host "Uploading files to GitHub..."
 git add .
 git commit -m "Update version and files"
-git push origin $branch
+# git push origin $branch
 
 Write-Host "Upload complete."
